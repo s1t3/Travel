@@ -1,0 +1,122 @@
+body{background-color:#99ccff}
+		  	
+		  	#frame{background-color:#00b386; width :80% ; top:0;height:650px; position:absolute; margin-left:10%;}
+		  	h1{color:blue; text-align: center;}
+		  	
+		  			
+
+		  			
+
+
+		  	#nav2 a{display:block;  color: red;  font-weight: bold; text-decoration:none;padding:10px;}
+		  	#nav2 a:hover{
+		  		color:white;
+		  	}
+
+		  	#left {width:20%; background-color:#53c653; float:left; height:500px;}
+		  	#right { background-color:#ffff99;height:500px;padding-left:10px; }
+		 	
+		 	#nav1 a:hover{color:white;}
+		 	
+		 	#box1{background-color: white; height:100px; width :100px; margin-left: 20%;}
+
+		 	#box1:hover{background-color:blue;}
+
+
+		 	.pic{
+		 		width:50px; height:50px;margin:2px;
+		 	}
+
+		 	  .box{
+		  	position:absolute;
+		  	left:20%;
+		  	width: 230px;
+		  	margin:2px;
+		  	border: 1px solid black;
+		  }
+
+		 
+
+		 	.pic:hover + .bigpic{
+		 		width:300px;
+		 		
+		 	}
+
+		  	footer{color:white; font-style:italic; text-align: center; clear:left; }
+
+		  	#nav1  a{
+		  		
+		  		margin:10px;
+		  		font:20px;
+		  		font-weight:bold;
+		  		text-decoration: none;
+		  		color: black;
+		  
+
+		  	}
+
+
+
+		  	.dropdown  {
+		  		position:absolute;
+		  		list-style: none;
+		  		display:none;
+		  		background-color: gray;
+		  		width:200px;
+		  		text-align: center;
+		  	
+		  	}
+
+		  	.dropdown a{
+		  		display:block;
+		  	}
+
+		  	#nav1:hover .dropdown{
+		  	
+
+		  		display:block;
+		  	}
+
+		  	 .dropdown:hover{
+		  	
+		  		color:black;
+		  	}
+		  
+		  		.bigpic{
+		 		position: fixed;
+		 		right :13%;
+		 		top:110px;
+		 		width:0;
+		 		-webkit-transition:width 0.3s linear 0s;
+		 		transition: width 0.3s linear 0s; z-index:10;
+		 	}
+
+
+
+ @media only screen and (max-width: 800px){
+ 	#frame{width:100%;margin-left:-5px;}
+ 
+
+ 	#left{ width:100%; height:40px; }
+ 	#nav2 a{
+ 		display:inline; 
+ 		text-align: center;
+ 		margin-bottom:10px;
+ 		}
+
+ 	.box{
+ 		position:static;
+ 		margin-top:0px;
+ 		padding-top:50px;
+ 		
+ 	}
+ 	.bigpic{
+ 	   right:20px;
+
+
+}
+.pic:hover + .bigpic{
+		 		width:200px;
+		 		top:180px;
+		 	}
+		
