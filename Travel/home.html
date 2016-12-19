@@ -4,56 +4,13 @@
 		  <title>Florida Travel</title>
 		  <meta charset="utf-8">
 		  <meta name="viewport" content="width=device-width, initial-scale=1">
+		   <link rel="stylesheet" href="home.css" type="text/css">
+		  
 
 
 		  <style>
 
-		  	body{background-color: #ffccff}
 		  	
-		  	#frame{background-color: gray; width :80% ; margin:auto;height:700px;}
-		  	h1{color:blue; text-align: center;}
-		  	#nav1 ul a{display:inline; margin-left: 10px; color: red; background-color: black; padding:2px; font-weight: bold; text-decoration:none;}
-
-
-		  	#nav2 ul a{display:block;  color: red;  font-weight: bold; text-decoration:none;}
-		  	#left {width:20%; background-color: blue; float:left; height:500px;}
-		  	#right { background-color: yellow;height:500px;padding-left:10px; }
-		 	
-		 	#nav1 a:hover{color:white;}
-		 	
-		 	#box1{background-color: white; height:100px; width :100px; margin-left: 20%;}
-
-		 	#box1:hover{background-color:blue;}
-
-
-		 	.pic{
-		 		width:50px; height:50px;padding:5px;
-		 	}
-
-		 	.bigpic{
-		 		position: absolute;
-		 		right:160px;
-		 		top:130px;
-		 		width: 0px;
-		 		-webkit-transition:width 0.3s linear 0s;
-		 		transition: width 0.3s linear 0s; z-index:10;
-		 	}
-
-		 	.pic:hover + .bigpic{
-		 		width:300px;
-		 	}
-
-		  	footer{color:white; font-style:italic; text-align: center; clear:left; }
-
-		  	#hiddenNav a{
-		  		margin: 0px;
-		  		display: inline;
-		  		list-style: none;
-		  		position: absolute;
-		  		visibility: hidden;
-		  	}
-		  
-
 		  </style>
 		 
 		  
@@ -66,28 +23,47 @@
 		
 		<div id="frame">
 			<h1> FLORIDA TRAVEL </h1>
-			<nav id="nav1"> 
-				<ul>
-				<a href="#">FOOD</a>
-					<ul id="hiddenNav">
-					<li >
-						<a  href="#">GAME1</a>
-						<a  href="#">GAME2</a>
-						<a  href="#">GAME3</a>
-					</li></ul>
-				<a href="#">PLACE</a>
-				<a href="#">GAME</a>
+	
+				<nav id="nav1">
 					
-				
-				</ul>
 
-			</nav>
+					<a href="#">Menu </a>
+						<li class="dropdown">
+							<a href="#">Menu 1</a>
+							<a href="#">Menu 2</a>
+							<a href="#">Menu 3</a>
+						</li>
+					
+
+				
+					<a href="#">Menu </a>
+						<li class="dropdown">
+							<a href="#">Menu 3</a>
+							<a href="#">Menu 4</a>
+							<a href="#">Menu 5</a>
+						</li>
+					
+
+					
+
+					<a href="#">Menu </a>
+						<li class="dropdown">
+							<a href="#">Menu 1</a>
+							<a href="#">Menu 2</a>
+							<a href="#">Menu 3</a>
+						</li>
+					
+				</nav>
+
+
+
 
 			<div id="flt">
 				
 				<div id="left">
 					<nav id="nav2"> 
 						<ul>
+						<a href="index.html">HOME</a>
 						<a href="#">FOOD</a>
 						<a href="#">GAME</a>
 						<a href="#">PLACE</a>
@@ -98,14 +74,47 @@
 
 				<div id="right">
 
+					<div class="box">
+
 					<img class="pic" src="images/beach1.jpg" alt="beach">
 					<img class="bigpic" src="images/beach1.jpg" alt="beach">
 
-					<img class="pic" src="images/beach2.jpg" alt="beach">
-					<img class="bigpic" src="images/beach2.jpg" alt="beach">
+					<img class="pic" src="images/fun1.jpg" alt="beach">
+					<img class="bigpic" src="images/fun1.jpg" alt="beach">
 
-					<img class="pic" src="images/beach3.jpg" alt="beach">
-					<img class="bigpic" src="images/beach3.jpg" alt="beach">
+					<img class="pic" src="images/fun3.jpg" alt="beach">
+					<img class="bigpic" src="images/fun3.jpg" alt="beach">
+
+
+
+					<img class="pic" src="images/beach1.jpg" alt="beach">
+					<img class="bigpic" src="images/beach1.jpg" alt="beach">
+
+					<img class="pic" src="images/fun1.jpg" alt="beach">
+					<img class="bigpic" src="images/fun1.jpg" alt="beach">
+
+					<img class="pic" src="images/fun3.jpg" alt="beach">
+					<img class="bigpic" src="images/fun3.jpg" alt="beach">
+					<img class="pic" src="images/beach1.jpg" alt="beach">
+					<img class="bigpic" src="images/beach1.jpg" alt="beach">
+
+					<img class="pic" src="images/fun1.jpg" alt="beach">
+					<img class="bigpic" src="images/fun1.jpg" alt="beach">
+
+					<img class="pic" src="images/fun3.jpg" alt="beach">
+					<img class="bigpic" src="images/fun3.jpg" alt="beach">
+					<img class="pic" src="images/beach1.jpg" alt="beach">
+					<img class="bigpic" src="images/beach1.jpg" alt="beach">
+
+					<img class="pic" src="images/fun1.jpg" alt="beach">
+					<img class="bigpic" src="images/fun1.jpg" alt="beach">
+
+					<img class="pic" src="images/fun3.jpg" alt="beach">
+					<img class="bigpic" src="images/fun3.jpg" alt="beach">
+
+
+					</div>
+					
 
 					<div id="box1" "><button onclick="myJump()">Click Me</button></div>
 
@@ -113,12 +122,26 @@
 					onchange ="box1.style.width = this.value+'px' "> </p>
 
 
+					
+
 
 				</div>
 
 
 
 			</div>
+
+								<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Ad -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-3440571437492832"
+     data-ad-slot="2780543100"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
 
 			<script>
 		  	var box1 = document.getElementById("box1");
