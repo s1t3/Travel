@@ -51,24 +51,31 @@ footer {
 	
 	}
 
+
+
 	
 }
 
 
- }
+ 
 
  @media only screen and (max-width: 600px){
  	.item{
 	max-height:400px;
  	}
 
-
+ 
 
 }
 
 @media only screen and (max-width: 770px){
  	.row img{
 	height:300px;
+ 	}
+
+#login{
+ 	
+ 		margin-left:150px;
  	}
 
 
