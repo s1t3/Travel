@@ -1,0 +1,179 @@
+<!Doctype html>
+<html lang="en">
+	<head> 
+		<title> </title>
+		<meta charset="utf-8">
+
+		<style>
+
+		/*<!-- BOXXXXXXXXXXXXXX-->*/
+		body{
+			position:absolute;
+			margin:auto;
+			align-items: center;
+
+		}
+			#box{
+				float:left;
+				margin:60px;
+				color: #F;
+				-webkit-border-radius: 10px;
+				opacity:0.5;
+				background:red;
+				width:120px;
+				height:75px;
+				-webkit-transition:-webkit-transform 1s,opacity:2s,background:3s, width 3s, height 3s;
+				
+			}
+
+			p{
+				color: white;
+				text-align: center;
+				padding-top:20%;
+			}
+
+			#box:hover  {
+    -webkit-animation:rotate 3s linear infinite;  
+    width: 220px;  
+    background-color: blue;
+   
+}
+
+
+@-webkit-keyframes rotate { 
+	100% { -webkit-transform: rotate(360deg); } 
+	from {background-color: red;}
+    to {background-color: blue;}
+
+}
+
+/*<!-- YINGGGGGGGGGGGGGGGGGGGGGGGGGGGGG-->*/
+#yin-yang {
+	margin: 0 150px 0 500px ;
+	float:left;
+	width: 192px;
+	height: 96px;
+	background: white;
+	border-color: red;
+	border-style: solid;
+	border-width: 4px 4px 100px 4px;
+	border-radius: 100%;
+	position: relative;
+	margin-left :30px;
+
+}
+
+#yin-yang:before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 0;
+	background: white;
+	border: 36px solid red;
+	border-radius: 100%;
+	width: 24px;
+	height: 24px;
+}
+
+#yin-yang:after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	background: red;
+	border: 36px solid white;
+	border-radius:100%;
+	width: 24px;
+	height: 24px;
+}
+
+#yin-yang:hover{
+    -webkit-animation:rotate 3s linear infinite;  
+    
+}
+
+
+@-webkit-keyframes rotate { 
+	100% { -webkit-transform: rotate(360deg); } 
+	from {background-color: white;}
+    to {background-color: blue;}
+
+}
+
+  
+  
+#facebook-icon {
+	margin-top:30px;
+  background: red;
+  text-indent: -999em;
+  width: 100px;
+  height: 110px;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+  border: 15px solid blue;
+  border-bottom: 0;
+}
+#facebook-icon::before {
+  content: "/20";
+  position: absolute;
+  background: blue;
+  width: 40px;
+  height: 90px;
+  bottom: -30px;
+  right: -37px;
+  border: 20px solid #eee;
+  border-radius: 25px;
+}
+#facebook-icon::after {
+  content: "/20";
+  position: absolute;
+  width: 55px;
+  top: 50px;
+  height: 20px;
+  background: #eee;
+  right: 5px;
+}
+
+
+			#facebook-icon:hover  {
+    -webkit-animation:rotate 3s linear infinite;  
+   
+   
+}
+
+
+@-webkit-keyframes rotate { 
+	100% { -webkit-transform: rotate(360deg); } 
+	from {background-color: red;}
+    to {background-color: blue;}
+    from {border-color: : red;}
+    to {border-color: : blue;}
+
+
+}
+
+   
+
+		</style>
+
+	</head>
+
+	<body>
+		<h2 style="text-align:center; color:blue;"> Please Hover Over Me </h2>
+		<div id="box"> <p>JUST FOR FUN</p></div>
+		<div id="yin-yang">
+			
+		</div>
+		<div id="facebook-icon">
+			
+		</div>
+
+
+	</body>
+
+
+
+</html>
+
+
