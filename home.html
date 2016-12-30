@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		  <title>Florida Travel</title>
+		  <meta charset="utf-8">
+		  <meta name="viewport" content="width=device-width, initial-scale=1">
+		   <link rel="stylesheet" href="home.css" type="text/css">
+		  
+
+
+		  <style>
+
+		  	
+		  </style>
+		 
+		  
+		  
+
+	</head>
+
+	<body>
+
+		
+		<div id="frame">
+			<h1> FLORIDA TRAVEL </h1>
+	
+				<nav id="nav1">
+					<ul>
+					
+
+					<li><a href="#">Menu1 </a>
+						<ul class="dropdown">
+								<li><a href="#">Menu 1</a></li>
+								<li><a href="#">Menu 2</a></li>
+								<li><a href="#">Menu 3</a></li>
+						</ul> </li>
+					
+
+				
+					<li><a href="#">Menu2 </a>
+						<ul class="dropdown">
+								<li><a href="#">Menu 3</a><li>
+							<li><a href="#">Menu 4</a></li>
+							<li><a href="#">Menu 5</a></li>
+						</ul></li>
+					
+
+					
+
+					<li><a href="#">Menu3 </a>
+						<ul class="dropdown">
+							<li><a href="#">Menu 1</a></li>
+							<li><a href="#">Menu 2</a></li>
+							<li><a href="#">Menu 3</a></li>
+						</ul></li>
+					
+					
+					</ul>
+				</nav>
+
+
+
+
+			<div id="flt">
+				
+				<div id="left">
+					<nav id="nav2"> 
+						<ul>
+						<a href="index.html">HOME</a>
+						<a href="#">FOOD</a>
+						<a href="#">GAME</a>
+						<a href="#">PLACE</a>
+						</ul>
+
+					</nav>
+				</div>
+
+				<div id="right">
+
+					<div class="box">
+
+					<img class="pic" src="images/beach1.jpg" alt="beach">
+					<img class="bigpic" src="images/beach1.jpg" alt="beach">
+
+					<img class="pic" src="images/fun1.jpg" alt="beach">
+					<img class="bigpic" src="images/fun1.jpg" alt="beach">
+
+					<img class="pic" src="images/fun3.jpg" alt="beach">
+					<img class="bigpic" src="images/fun3.jpg" alt="beach">
+
+
+
+					<img class="pic" src="images/beach1.jpg" alt="beach">
+					<img class="bigpic" src="images/beach1.jpg" alt="beach">
+
+					<img class="pic" src="images/fun1.jpg" alt="beach">
+					<img class="bigpic" src="images/fun1.jpg" alt="beach">
+
+					<img class="pic" src="images/fun3.jpg" alt="beach">
+					<img class="bigpic" src="images/fun3.jpg" alt="beach">
+					<img class="pic" src="images/beach1.jpg" alt="beach">
+					<img class="bigpic" src="images/beach1.jpg" alt="beach">
+
+					<img class="pic" src="images/fun1.jpg" alt="beach">
+					<img class="bigpic" src="images/fun1.jpg" alt="beach">
+
+					<img class="pic" src="images/fun3.jpg" alt="beach">
+					<img class="bigpic" src="images/fun3.jpg" alt="beach">
+					<img class="pic" src="images/beach1.jpg" alt="beach">
+					<img class="bigpic" src="images/beach1.jpg" alt="beach">
+
+					<img class="pic" src="images/fun1.jpg" alt="beach">
+					<img class="bigpic" src="images/fun1.jpg" alt="beach">
+
+					<img class="pic" src="images/fun3.jpg" alt="beach">
+					<img class="bigpic" src="images/fun3.jpg" alt="beach">
+
+
+					</div>
+					
+
+					<div id="box1" "><button onclick="myJump()">Click Me</button></div>
+
+					<p>Width: <input type="number" step="10"
+					onchange ="box1.style.width = this.value+'px' "> </p>
+
+
+					
+
+
+				</div>
+
+
+
+			</div>
+
+			
+
+
+			<script>
+		  	var box1 = document.getElementById("box1");
+		  	box1.style.transition = "width 1s ease 0s";
+
+		  	box1.addEventListener( "transitionend", function() {
+		  			box1.style.width ='100px';
+		  			box1.style.backgroundColor ="green";
+
+		  			
+
+		  			//alert("Transition End!");
+		  	});
+
+		  </script>
+
+		  <script>
+				function myJump() {
+				  var elem = document.getElementById("box1");  
+				  		elem.style.backgroundColor ="pink";
+				  var pos = 0;
+				  var id = setInterval(frame, 5);
+				  function frame() {
+				    if (pos == 350) {
+				      clearInterval(id);
+				    } else {
+				      pos++; 
+				      elem.style.top = pos + 'px'; 
+				      elem.style.left = pos + 'px'; 
+				    
+				  }
+				}
+			}
+		</script>
+
+
+
+
+			<footer>
+			    <p>letue@1589.com</p>
+			</footer>
+		</div>
+
+	</body>
+</html>

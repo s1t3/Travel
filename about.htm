@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title> ABOUT</title>
+
+		<style> 
+			body{
+
+				
+				background-image:linear-gradient(to right,#3399ff, #99ccff); 
+			}
+		 	#container{
+		 	
+		 		height:60%;
+		 		width:85%;
+		 		margin: 30px auto;
+		 	}
+		 	#img{
+		 		height:60%;
+		 		width:85%;
+		 		position:absolute;
+		 		border:1px solid black;
+		 		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		 		
+		 	}
+		 	#left_holder{
+		 		height:60%;
+		 		width:10%;
+		 		position:absolute;
+		 		left:1%; top:0;
+		 		
+		 	}
+
+		 	#right_holder{
+		 		height:60%;
+		 		width:10%;
+		 		position:absolute;
+		 		right:1%; top:0;
+
+		 	}
+
+		 	.left_arrow{
+		 		height:50px;
+		 		width:30px;
+		 		position:absolute;
+		 		top:50%;
+		 		left:0;
+
+		 	}
+
+		 	.right_arrow{
+		 		position:absolute;
+		 		height:50px;
+		 		width:30px;
+		 		top:50%;
+		 		right:0;
+
+		 	}
+
+
+
+		</style>
+		<script type="text/javascript">
+			var imagecount = 1;
+			var total = 3;
+
+			window.setInterval(function slide(){
+				var Image = document.getElementById('img');
+				imagecount = imagecount + 1;
+				if(imagecount > total){
+					imagecount = 1;
+				}
+
+				if(imagecount < 1){
+					imagecount = total;
+				}
+				Image.src = "images/pic"+ imagecount+".jpg";
+
+			}, 3000);
+		</script>
+	</head>
+
+	<body onLoad="slide()">
+	 
+
+	 	<div id="container">
+	 		<img src="images/pic.jpg" id="img"/>
+	 		
+	 		<div id="left_holder"> 
+	 			<img class="left_arrow" onClick="slide(-1)" src="images/left_arrow.jpg"/>
+	 		</div>
+	 		<div id="right_holder">
+	 			<img class="right_arrow" onClick="slide(1)" src="images/right_arrow.jpg"/>
+	 		</div>
+	 	</div>
+
+	</body>
+
+</html>
