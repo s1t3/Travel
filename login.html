@@ -161,10 +161,20 @@
                   
                     <div id="lower">
                         <input type="checkbox"><label class="check" for="checkbox">Keep me logged in</label>
-                        <input type="submit" value="Login">
+                        <input type="submit" onClick="login()" value="Login">
                     </div><!--/ lower-->
                 </form>
             </div><!--/ container-->
             <!-- End Page Content -->
+                
+                <script>
+                        function login(){
+                        var username = document.getElementById('username').value;
+                        var username1 = document.getElementById('container');
+                                username1.innerHTML = username;
+                                
+                        }
+                </script>
+                        
         </body>
         </html>
