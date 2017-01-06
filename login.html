@@ -147,8 +147,8 @@
         <body>
 
             <!-- Begin Page Content -->
-            <div id="container">
-                <form  method="post">
+             <div id="container">
+                
                     <label for="loginmsg" style="color:hsla(0,100%,50%,0.5); font-family:"Helvetica Neue",Helvetica,sans-serif;"><?php  echo @$_GET['msg'];?></label>
                     <br>
                     <label for="username">Username:</label>
@@ -163,15 +163,20 @@
                         <input type="checkbox"><label class="check" for="checkbox">Keep me logged in</label>
                         <input type="submit" onclick="login()" value="Login">
                     </div><!--/ lower-->
-                </form>
+              
             </div><!--/ container-->
             <!-- End Page Content -->
                 
                 <script>
                         function login(){
-                        var username = document.getElementById('username').value;
-                        var username1 = document.getElementById('container');
-                                username1.innerHTML = username;
+                        var username1 = document.getElementById('username').value;
+                        document.getElementById('container').innerHTML ='Welcome ' +username1;
+                       x=document.getElementById('container').style;
+                       x.color ='blue';
+                       x.textAlign='center';
+                       x.fontWeight ='bold';
+                       x.fontSize ='3em';
+                     
                                 
                         }
                 </script>
