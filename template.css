@@ -72,6 +72,11 @@ footer {
  	.row img{
 	height:300px;
  	}
+	
+ @media only screen and (max-width: 520px){
+ 	.row img{
+	height:200px;
+ 	}
 
 #login{
  	
